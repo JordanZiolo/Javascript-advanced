@@ -2,20 +2,19 @@
 console.log('🚀 Opdracht 3.4: Email Validatie');
 
 function valideerEmail(email) {
-    // TODO: Check of email geldig is
-    // Regels: moet @ bevatten, geen spaties, eindigt op .com/.nl/.org
-    
-    const schoonEmail = /* jouw code hier - trim en lowercase */
-    
-    // Check @ aanwezig
-    if () return false;
-    
-    // Check geen spaties
-    if () return false;
-    
-    // Check geldig einde
+    // Schoon input op: verwijder spaties rondom en zet om naar kleine letters
+    const schoonEmail = email.trim().toLowerCase();
+
+    // Check of email een @ bevat
+    if (!schoonEmail.includes('@')) return false;
+
+
+    if (schoonEmail.includes(' ')) return false;
+
+
     const geldigeEindes = ['.com', '.nl', '.org'];
-    return /* jouw code hier - check of email eindigt op een van deze */;
+    const geldigEinde = geldigeEindes.some(einde => schoonEmail.endsWith(einde));
+    return geldigEinde;
 }
 
 // Test de functie
