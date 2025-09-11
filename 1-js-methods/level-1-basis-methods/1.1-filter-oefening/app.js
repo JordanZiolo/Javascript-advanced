@@ -4,7 +4,7 @@ console.log('🚀 Opdracht 1.1: Filter Oefening');
 const getallen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 console.log('Originele array:', getallen);
 
-// TODO: Filter de even getallen
+// TODO: Filter de even getalle
 const evenGetallen = getallen.filter(getal => getal % 2 === 0);
 
 console.log('Even getallen:', evenGetallen);
