@@ -1,7 +1,14 @@
 // Maak een boek object waar je allemaal gegevens van een boek in kunt opslaan en tonen op het scherm.
 
 // Het object moet de volgende properties bevatten:
-
+const book = {
+    titel:"op tijd komen",
+    author:"Yassir",
+    publisher:"Yassir",
+    year:"1939",
+    sold:"69",
+    price:"$69,99"
+}
 //     Titel: de titel van het boek (string)
 //     Auteur: de auteur van het boek (string)
 //     Uitgeverij: de uitgeverij van het boek (string)
