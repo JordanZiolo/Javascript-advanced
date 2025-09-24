@@ -7,7 +7,7 @@ const book = {
     publisher:"Yassir",
     year:"1939",
     sold:"69",
-    price:"$69,99"
+    price:"$69,99",
 }
 //     Titel: de titel van het boek (string)
 //     Auteur: de auteur van het boek (string)
@@ -17,7 +17,14 @@ const book = {
 //     Prijs: prijs van het boek (string)
 
 // Toon elke property op het scherm door het in een p-tag te plaatsen. Hiervoor maak je in je HTML een div-tag aan met de class 'output'.
-
+const output = document.querySelector(".output");
+ 
+for (let property in book) {
+  const p = document.createElement("p");
+  p.textContent = property + ": " + book[property];
+  output.appendChild(p);
+  console.log
+}
 // In de theorie staat uitgelegd hoe je dit moet doen.
 
 // Let op: in de code conventions staat dat je de code in het Engels moet schrijven!
