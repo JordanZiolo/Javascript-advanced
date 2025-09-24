@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Opdracht 3 - persoon</title>
+  <title>stupid person</title>
 </head>
 <body>
-  
+ 
+<h1>Person Info</h1>
+<div id="person"></div>
+ 
+<h2>Update Person</h2>
+<div>
+  <input type="text" id="newName" placeholder="New name">
+  <button onclick="person.changeName(document.getElementById('newName').value)">Change Name</button>
+</div>
+ 
+<div>
+  <label>Alive: </label>
+  <select id="aliveStatus" onchange="person.changeIsAlive(this.value === 'true')">
+    <option value="true">Yes</option>
+    <option value="false">No</option>
+  </select>
+</div>
+ 
+<div>
+  <input type="text" id="newHobby" placeholder="New hobby">
+  <button onclick="person.addHobby(document.getElementById('newHobby').value)">Add Hobby</button>
+</div>
+
+<script src="app.js"></script>
+ 
 </body>
 </html>
+ 
